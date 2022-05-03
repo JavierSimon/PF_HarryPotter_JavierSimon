@@ -1,0 +1,46 @@
+// variables medidas
+$tablet: 600px;
+$desktop: $tablet + 424;
+
+#contenedor {
+    display: grid;
+    height: 60vh;
+    grid-template-areas:
+      "header" 
+      "contenido" 
+      "img" 
+      "footer";
+    grid-template-rows: 0.2fr 1fr 1fr 0.3fr;
+    grid-template-columns: 1fr;
+ }
+
+
+ @media screen and (min-width:$tablet){
+    #contenedor {
+        display: grid;
+        height: 90vh;
+        grid-template-areas:
+          "header header"
+          "contenido img" 
+          "contenido img"  
+          "footer footer";
+        grid-template-rows: 0.2fr 1fr 1fr 0.3fr;
+        grid-template-columns: 1.3fr 0.7fr;
+     } 
+
+ }
+
+ @media screen and (min-width:$desktop){
+    #contenedor {
+        display: grid;
+        height: 100vh;
+        grid-template-areas:
+          "header header header header"
+          "contenido contenido img img" 
+          "contenido contenido img img"  
+          "footer footer footer footer";
+        grid-template-rows: 0.2fr 1fr 1fr 0.3fr;
+        grid-template-columns: repeat(4, 1fr)
+     } 
+     
+ } 
