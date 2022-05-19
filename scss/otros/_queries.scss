@@ -2,6 +2,7 @@
 $tablet: 600px;
 $desktop: $tablet + 424;
 
+
 #contenedor {
     display: grid;
     height: 60vh;
@@ -15,7 +16,7 @@ $desktop: $tablet + 424;
  }
 
 
- @media screen and (min-width:$tablet){
+@media screen and (min-width:$tablet){
     #contenedor {
         display: grid;
         height: 90vh;
@@ -27,7 +28,6 @@ $desktop: $tablet + 424;
         grid-template-rows: 0.2fr 1fr 1fr 0.3fr;
         grid-template-columns: 1.3fr 0.7fr;
      } 
-
  }
 
  @media screen and (min-width:$desktop){
@@ -40,7 +40,9 @@ $desktop: $tablet + 424;
           "contenido contenido img img"  
           "footer footer footer footer";
         grid-template-rows: 0.2fr 1fr 1fr 0.3fr;
-        grid-template-columns: repeat(4, 1fr)
-     } 
-     
+        grid-template-columns: repeat(4, 1fr);
+        padding: 0 1.5rem;
+     }      
  } 
+
+
